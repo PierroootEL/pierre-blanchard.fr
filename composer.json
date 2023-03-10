@@ -1,6 +1,6 @@
 {
     "name": "dev/pierre-blanchard",
-    "description": "Environnement de dévelloppement du site \"https://pierre-blanchard.fr\"",
+    "description": "Environnement de production du site \"https://pierre-blanchard.fr\"",
     "license": "Free-USE",
     "authors": [
         {
