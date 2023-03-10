@@ -1,0 +1,14 @@
+{
+    "name": "dev/pierre-blanchard",
+    "description": "Environnement de dévelloppement du site \"https://pierre-blanchard.fr\"",
+    "license": "Free-USE",
+    "authors": [
+        {
+            "name": "Pierre BLANCHARD",
+            "email": "blanchardpierre03@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
