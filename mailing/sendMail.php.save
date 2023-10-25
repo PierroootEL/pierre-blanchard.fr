@@ -1,6 +1,6 @@
 <?php
 
-    @ini_set('display_errors', true);
+   /** @ini_set('display_errors', true);
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
@@ -24,7 +24,7 @@
                 $mail->Host       = 'ssl0.ovh.net';                     //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
                 $mail->Username   = 'contact@pierre-blanchard.fr';                     //SMTP username
-                $mail->Password   = file_get_contents('/etc/dev_req/pierre-blanchard/mailPassword');                               //SMTP password
+                $mail->Password   = 'oggDnQ^*@kSnB2EJ&hVt';                               //SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
                 $mail->SMTPOptions = array('ssl' => array('verify_peer' => false,'verify_peer_name' => false,'allow_self_signed' => true)); // ignorer l'erreur de certificat.
@@ -43,10 +43,14 @@
                 $mail->addAddress($_POST['contactEmail'], $_POST['contactName']);     //Add a recipient
                 $mail->addAddress('contact@pierre-blanchard.fr', 'Pierre Blanchard');     //Add a recipient
             
+                //Attachments
+                // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+                // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+            
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'Votre demande de contact chez Pierre Blanchard : ' . trim(htmlspecialchars($_POST['contactSubject']));
-                $mail->Body    = "Merci de m'avoir contacté, je vous répondrai au plus vite : " . trim(htmlspecialchars($_POST['contactMessage']));
+                $mail->Body    = 'Votre demande de contact chez Pierre Blanchard : ' . trim(htmlspecialchars($_POST['contactMessage']));
                 $mail->AltBody = trim(htmlspecialchars($_POST['contactMessage']));
             
                 $mail->send();
@@ -58,6 +62,10 @@
     }
 
     header('Location: https://website.dev.pierre-blanchard.fr#contact');
+**/
 
+
+header('Location: index.phpheader('Refresh: 10; URL=http://yoursite.com/page.php');');
 ?>
-<h1>Envoi du mail en cours</h1>
+
+<h1>Fonction désactivée à l'instant T</h1>

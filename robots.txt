@@ -1,0 +1,16 @@
+User-agent: Googlebot
+User-agent: Googlebot-Mobile
+User-agent: Yahoo! Slurp
+User-agent: Slurp
+User-agent: slurp
+User-agent: msnbot
+User-agent: bingbot
+User-agent: ia_archiver
+
+Disallow: /mailing/*.php
+
+User-agent: *
+Allow: /
+Disallow: /mailing/*.php
+
+Sitemap: https://pierre-blanchard.fr/sitemap.xml
